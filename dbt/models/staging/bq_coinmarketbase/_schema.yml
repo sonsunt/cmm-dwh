@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: bq_coinmarketbase
+    database: de-zoomcamp-400010
+    schema: coin_price_data
+    tables:
+      - name: latest_prices
+        columns:
+          - name: request_time
+          - name: id
+          - name: name
+          - name: symbol
+          - name: currency
+          - name: price
+          - name: market_cap
+          - name: price_updated_time
+          - name: coin_updated_time
+      - name: holidays
+
+models:
+  - name: stg_bq_coinmarketbase__coins
+  - name: stg_bq_coinmarketbase__date
+  - name: stg_bq_coinmarketbase__holidays
+  - name: stg_bq_coinmarketbase__price
+  

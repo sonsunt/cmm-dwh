@@ -1,0 +1,1 @@
+select currency from {{ source('bq_coinmarketbase', 'latest_prices' )}}
