@@ -99,9 +99,9 @@ def load_to_bigquery(csv_uri, table_id, cred):
     print(f"Loaded {destination_table.num_rows} rows.")
 
 def main():
-    cfg = load_config("config.yaml")
+    cfg = load_config("config.json")
     bucket_name = "de-general-bucket-1"
-    table_id = "de-zoomcamp-400010.coin_price_data.test_data"
+    table_id = "de-zoomcamp-400010.coin_price_data.latest_prices"
     file_name = f"crypto-prices-{datetime.now():%Y-%m-%d-%H%M%S}"
     json_fp = f"lake-coin/data/json/{file_name}.json"
     csv_fp = f"lake-coin/data/csv/{file_name}.csv"
