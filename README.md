@@ -24,5 +24,5 @@
 - ✅ สร้าง Minimum Viable Product
 - ⏳ ปรับปรุง Idempotency
 - ⏳ ปรับปรุง Unit test 
-- ⏳ เชื่อมต่อ Task แต่ละตัวเข้ากับ Orchestrator
+- ✅ เชื่อมต่อ Task แต่ละตัวเข้ากับ Orchestrator
 - ⏳ พัฒนางานอย่างต่อเนื่อง
